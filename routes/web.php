@@ -19,7 +19,7 @@ use App\Http\Controllers\AdminController;
 */
 
 Route::get('/', function () {
-    return view('layouts.app');
+    return view('auth/login');
 });
 
 Route::group(['middleware' => ['auth','ceklevel:admin']], function (){
