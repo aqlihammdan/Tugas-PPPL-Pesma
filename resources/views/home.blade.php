@@ -46,7 +46,7 @@ active
             @foreach ($dtLaporan as $i => $item)
             @if ($item->status == 'diterima')
             <tr>
-              <th scope="row">{{ $i++  }}</th>
+              <th scope="row">{{ $i ++  }}</th>
               <td scope="row">{{ $item->bulanbayar }}</td>
               <td>{{ $item->tanggalpembayaran->format('j F Y ') }}</td>
               <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#customModal{{ $item->id }}">
