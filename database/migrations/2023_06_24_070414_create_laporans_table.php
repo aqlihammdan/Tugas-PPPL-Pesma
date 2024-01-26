@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('bulanbayar');
             $table->string('file_bukti');
             $table->timestamps();
+            $table->string('status')->nullable();
         });
     }
     
